@@ -7,7 +7,7 @@
 
 #include <QMainWindow>
 #include "../../gCode/GCodeParser.h"
-#include <pqxx/pqxx>
+#include "pqxx/pqxx"
 #include <QNetworkAccessManager>
 
 QT_BEGIN_NAMESPACE

@@ -28,16 +28,16 @@ FetchContent_Declare(jsonGit
 
 FetchContent_MakeAvailable(pqxxGit jsonGit)
 
-add_executable(gprinterClient main.cpp
-        gCode/GCodeParser.cpp
-        gCode/GCodeParser.h
-        utils/helpers.h
-        ui/mainwindow/mainwindow.cpp
-        ui/mainwindow/mainwindow.h
-        ui/mainwindow/mainwindow.ui
-        ui/databaseConnectionDialog/databaseconnectiondialog.cpp
-        ui/databaseConnectionDialog/databaseconnectiondialog.h
-        ui/databaseConnectionDialog/databaseconnectiondialog.ui)
+add_executable(gprinterClient src/main.cpp
+        src/gCode/GCodeParser.cpp
+        src/gCode/GCodeParser.h
+        src/utils/helpers.h
+        src/ui/mainwindow/mainwindow.cpp
+        src/ui/mainwindow/mainwindow.h
+        src/ui/mainwindow/mainwindow.ui
+        src/ui/databaseConnectionDialog/databaseconnectiondialog.cpp
+        src/ui/databaseConnectionDialog/databaseconnectiondialog.h
+        src/ui/databaseConnectionDialog/databaseconnectiondialog.ui)
 
 target_link_libraries(gprinterClient
         Qt::Core

@@ -5,11 +5,11 @@
 #include <string>
 #include "GCodeParser.h"
 
-#include <nlohmann/json.hpp>
+#include "nlohmann/json.hpp"
 #include <set>
 #include <iostream>
 
-#include "../utils/helpers.h"
+#include "../utils/Helpers.h"
 
 using json = nlohmann::json;
 
